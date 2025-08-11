@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # LinkedIn Android Poster - Setup Script
-echo "🚀 LinkedIn Android Poster - Automated Setup"
+echo "LinkedIn Android Poster - Automated Setup"
 echo "============================================="
 
 # Colors for output
@@ -116,24 +116,24 @@ chmod +x setup.sh
 
 print_success "Setup completed successfully!"
 echo ""
-echo "🎯 Next Steps:"
+echo "Next Steps:"
 echo "=============="
 echo "1. Edit the .env file with your API credentials:"
 echo "   ${YELLOW}nano .env${NC}"
 echo ""
 echo "2. Get your API keys:"
-echo "   📁 Reddit: https://www.reddit.com/prefs/apps (Free)"
-echo "   🤖 OpenAI: https://platform.openai.com/api-keys (~$0.03/post)"
-echo "   🐦 X/Twitter: https://developer.twitter.com (Optional)"
+echo "   - Reddit: https://www.reddit.com/prefs/apps (Free)"
+echo "   - OpenAI: https://platform.openai.com/api-keys (~$0.03/post)"
+echo "   - X/Twitter: https://developer.twitter.com (Optional)"
 echo ""
 echo "3. Start the application:"
 echo "   ${GREEN}./start.sh${NC}"
 echo ""
 echo "4. Access your dashboard:"
-echo "   🌐 http://localhost:5173"
+echo "   - http://localhost:5173"
 echo ""
-echo "📖 For detailed setup instructions, see:"
+echo "For detailed setup instructions, see:"
 echo "   - README.md (Quick start guide)"
 echo "   - PROJECT.md (Complete documentation)"
 echo ""
-print_success "Happy Android content curation! 🚀"
+print_success "Happy Android content curation!"

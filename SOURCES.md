@@ -1,28 +1,28 @@
-# 📊 Content Sources & Configuration
+# Content Sources & Configuration
 
 This document details the content sources, filtering criteria, and quality controls used by the LinkedIn Android Poster.
 
-## 🔴 Reddit Sources
+## Reddit Sources
 
 ### Primary Subreddits
 
 | Subreddit | Status | Focus | Min Score | Min Comments |
 |-----------|---------|-------|-----------|--------------|
-| **r/androiddev** | ✅ Active | Professional Android development | 50 | 5 |
-| **r/kotlin** | ✅ Active | Kotlin language (Android-focused) | 30 | 5 |
-| **r/android** | ✅ Selective | General Android (dev content only) | 100 | 5 |
-| **r/mobiledev** | ✅ Active | Mobile development | 50 | 5 |
+| **r/androiddev** | Active | Professional Android development | 50 | 5 |
+| **r/kotlin** | Active | Kotlin language (Android-focused) | 30 | 5 |
+| **r/android** | Selective | General Android (dev content only) | 100 | 5 |
+| **r/mobiledev** | Active | Mobile development | 50 | 5 |
 
 ### Quality Filters
 
-#### ✅ **Include Posts With:**
+#### **Include Posts With:**
 - **Technical Keywords**: jetpack compose, kotlin, android studio, gradle, coroutines, flow, mvvm, architecture, performance
 - **Educational Content**: tutorial, guide, best practice, tip, trick, testing, release, update
 - **Professional Topics**: material design, api, dependency injection, dagger, hilt, retrofit, room, firebase
 - **Sufficient Engagement**: Minimum upvotes and comments (see table above)
 - **Recent Activity**: Posts from hot/trending or top of the week
 
-#### ❌ **Exclude Posts With:**
+#### **Exclude Posts With:**
 - **Help/Support**: "help", "error", "issue", "problem", "stuck", "not working", "crash", "bug"
 - **Beginner Questions**: "how do i", "how to fix", "newbie", "beginner question", "eli5"
 - **Academic**: "homework", "assignment"
@@ -36,7 +36,7 @@ This document details the content sources, filtering criteria, and quality contr
 3. **Hot Posts** from r/kotlin (checks 15 posts, Android-related only)
 4. **Fallback**: Other configured subreddits
 
-## 🐦 X (Twitter) Sources
+## X (Twitter) Sources
 
 ### Hashtags Monitored
 - `#AndroidDev` - Primary Android development hashtag
@@ -59,7 +59,7 @@ This document details the content sources, filtering criteria, and quality contr
 - **Minimum Retweets**: 5
 - **Exclude**: Hiring posts, courses, bootcamp promotions
 
-## 🎯 LinkedIn Content Strategy
+## LinkedIn Content Strategy
 
 ### Post Types Generated
 1. **Technical Insights** - Deep dives into development topics
@@ -105,7 +105,7 @@ This document details the content sources, filtering criteria, and quality contr
 - **Code Quality** - Static analysis, code review, refactoring
 - **Security Best Practices** - Data protection, secure coding
 
-## ⏰ Scheduling Configuration
+## Scheduling Configuration
 
 ### Default Intervals
 - **Content Fetching**: Every 6 hours (21,600 seconds)
@@ -117,7 +117,7 @@ This document details the content sources, filtering criteria, and quality contr
 - **14:00 UTC** - Morning US West Coast
 - **17:00 UTC** - End of day Europe
 
-## 🔧 Configuration Files
+## Configuration Files
 
 ### `sources_config.py`
 Contains all source definitions, quality filters, and content strategies.
@@ -133,7 +133,7 @@ Contains API credentials and basic settings:
 ### `config.py`  
 Application configuration and settings management.
 
-## 🎛️ Customization
+## Customization
 
 ### Adding New Subreddits
 1. Edit `REDDIT_SOURCES` in `sources_config.py`
@@ -150,7 +150,7 @@ Application configuration and settings management.
 - Modify `post_types` for different content styles
 - Adjust `hashtags` for different reach strategies
 
-## 📈 Success Metrics
+## Success Metrics
 
 ### Source Quality Indicators
 - **High Engagement**: Comments/upvotes ratio > 0.1
@@ -164,7 +164,7 @@ Application configuration and settings management.
 - **Click-through Rate**: Target 2%+ on source links
 - **Professional Value**: Educational or actionable insights
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 ### Planned Improvements
 1. **AI-Powered Filtering**: Use ML to better identify high-quality posts

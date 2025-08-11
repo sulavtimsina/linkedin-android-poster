@@ -1,4 +1,4 @@
-# 🚀 LinkedIn Android Poster - Complete Project Guide
+# LinkedIn Android Poster - Complete Project Guide
 
 A comprehensive macOS application that automatically curates Android development content from Reddit and X/Twitter, generates professional LinkedIn posts using AI, and manages automated posting workflows.
 
@@ -15,14 +15,14 @@ A comprehensive macOS application that automatically curates Android development
 - [Deployment](#-deployment)
 - [Troubleshooting](#-troubleshooting)
 
-## 🎯 Overview
+## Overview
 
 ### What It Does
-1. **📱 Content Curation**: Fetches trending Android development discussions from Reddit and X/Twitter
-2. **🤖 AI Enhancement**: Uses OpenAI GPT-4 to generate professional LinkedIn posts with proper attribution
-3. **⚡ Smart Filtering**: Applies quality filters to ensure only LinkedIn-worthy content is processed
-4. **📊 Dashboard Control**: React-based interface for monitoring, editing, and managing content
-5. **🔄 Automated Workflow**: Configurable scheduling for hands-off operation
+1. **Content Curation**: Fetches trending Android development discussions from Reddit and X/Twitter
+2. **AI Enhancement**: Uses OpenAI GPT-4 to generate professional LinkedIn posts with proper attribution
+3. **Smart Filtering**: Applies quality filters to ensure only LinkedIn-worthy content is processed
+4. **Dashboard Control**: React-based interface for monitoring, editing, and managing content
+5. **Automated Workflow**: Configurable scheduling for hands-off operation
 
 ### Key Features
 - **Quality-First Approach**: Advanced filtering removes help requests, basic questions, and low-engagement posts
@@ -32,7 +32,7 @@ A comprehensive macOS application that automatically curates Android development
 - **Manual Override**: Full manual control for immediate operations
 - **Copy Fallback**: Works without LinkedIn API - provides copy-to-clipboard functionality
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - **macOS** (tested on macOS 14+)
@@ -92,7 +92,7 @@ cd frontend && npm run dev
 - **API**: http://127.0.0.1:8000
 - **API Documentation**: http://127.0.0.1:8000/docs
 
-## 🏗️ Architecture
+## Architecture
 
 ### System Components
 
@@ -161,7 +161,7 @@ cd frontend && npm run dev
 - **SystemLogs** - Application logs and error tracking
 - **Settings** - Configurable application parameters
 
-## 📊 Content Sources
+## Content Sources
 
 ### Reddit Sources
 - **r/androiddev** - Primary professional Android development community
@@ -181,7 +181,7 @@ cd frontend && npm run dev
 
 *See [SOURCES.md](SOURCES.md) for complete filtering criteria.*
 
-## 🔑 API Setup
+## API Setup
 
 ### Required APIs
 
@@ -224,7 +224,7 @@ LINKEDIN_PERSON_URN=your_person_urn
 - **OpenAI**: ~$0.03 per generated post (GPT-4 Turbo)
 - **LinkedIn**: Free API access (rate limited)
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables (.env)
 ```bash
@@ -264,7 +264,7 @@ Customize subreddits, hashtags, quality filters, and content strategies.
 - **Scheduler Control**: Pause/resume operations
 - **Manual Operations**: Immediate fetch/generate/post
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Dashboard Navigation
 
@@ -339,13 +339,13 @@ python -m backend.cli logs --limit 50
    - Otherwise, provide copy-to-clipboard functionality
    - Track posting status and engagement metrics
 
-## 🧪 Testing
+## Testing
 
 ### API Testing Dashboard
 Access http://localhost:5173 for interactive testing:
-- **🔴 Test Reddit API**: Fetch quality Android development posts
-- **🤖 Test OpenAI API**: Generate summaries of fetched content
-- **⚡ Test Full Pipeline**: Complete fetch → generate workflow
+- **Test Reddit API**: Fetch quality Android development posts
+- **Test OpenAI API**: Generate summaries of fetched content
+- **Test Full Pipeline**: Complete fetch → generate workflow
 
 ### Unit Testing
 ```bash
@@ -368,7 +368,7 @@ python -c "from fetchers.reddit_fetcher import RedditFetcher; f = RedditFetcher(
 python -c "from post_generator import LinkedInPostGenerator; g = LinkedInPostGenerator(); print('OpenAI OK')"
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Production Setup
 ```bash
@@ -486,7 +486,7 @@ pip install flake8
 flake8 backend/
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -573,7 +573,7 @@ curl http://127.0.0.1:8000/api/status
 - OpenAI: Varies by plan (monitor usage dashboard)
 - LinkedIn: 100 posts/day (configurable limit)
 
-## 📈 Success Metrics & Analytics
+## Success Metrics & Analytics
 
 ### Content Quality Indicators
 - **Engagement Rate**: Comments and likes on source posts
@@ -595,7 +595,7 @@ curl http://127.0.0.1:8000/api/status
 
 ---
 
-## 📞 Support & Contributing
+## Support & Contributing
 
 ### Get Help
 1. Check this documentation and [SOURCES.md](SOURCES.md)
@@ -615,4 +615,4 @@ MIT License - see LICENSE file for details.
 
 ---
 
-**Built with ❤️ for the Android developer community**
+**Built for the Android developer community**

@@ -1,4 +1,4 @@
-# 🚀 LinkedIn Android Poster
+# LinkedIn Android Poster
 
 **Automatically curate trending Android development content and generate professional LinkedIn posts using AI.**
 
@@ -10,24 +10,24 @@ A comprehensive macOS application that fetches quality Android development discu
 ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-009688?style=flat-square&logo=fastapi)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-## 🎯 What It Does
+## What It Does
 
-1. **📱 Smart Content Curation**: Fetches high-quality Android development discussions from r/androiddev, r/kotlin, and other professional communities
-2. **🤖 AI-Powered Generation**: Uses OpenAI GPT-4 to create engaging LinkedIn posts with professional tone and proper attribution
-3. **⚡ Quality Filtering**: Advanced filtering removes help requests, basic questions, and low-engagement content
-4. **📊 Interactive Dashboard**: React-based interface for monitoring, editing, and managing your content pipeline
-5. **🔄 Automated Workflow**: Configurable scheduling from 1 minute to 24 hours for hands-off operation
+1. **Smart Content Curation**: Fetches high-quality Android development discussions from r/androiddev, r/kotlin, and other professional communities
+2. **AI-Powered Generation**: Uses OpenAI GPT-4 to create engaging LinkedIn posts with professional tone and proper attribution
+3. **Quality Filtering**: Advanced filtering removes help requests, basic questions, and low-engagement content
+4. **Interactive Dashboard**: React-based interface for monitoring, editing, and managing your content pipeline
+5. **Automated Workflow**: Configurable scheduling from 1 minute to 24 hours for hands-off operation
 
-## ✨ Key Features
+## Key Features
 
-- **🎯 LinkedIn-Ready Content**: Only processes content suitable for professional audiences
-- **📝 Perfect Attribution**: Always links back to original sources and authors
-- **⏱️ Flexible Scheduling**: Run every few minutes for active monitoring or hours for passive curation
-- **📋 Copy Fallback**: Works without LinkedIn API - provides copy-to-clipboard functionality
-- **🔍 Smart Filtering**: Focuses on technical insights, tutorials, announcements, and best practices
-- **📈 Quality Scoring**: Uses engagement, recency, and relevance to rank content
+- **LinkedIn-Ready Content**: Only processes content suitable for professional audiences
+- **Perfect Attribution**: Always links back to original sources and authors
+- **Flexible Scheduling**: Run every few minutes for active monitoring or hours for passive curation
+- **Copy Fallback**: Works without LinkedIn API - provides copy-to-clipboard functionality
+- **Smart Filtering**: Focuses on technical insights, tutorials, announcements, and best practices
+- **Quality Scoring**: Uses engagement, recency, and relevance to rank content
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - macOS (tested on 14+)
@@ -70,7 +70,7 @@ cd ..
 ./start.sh
 ```
 
-## 🔑 API Setup (Required)
+## API Setup (Required)
 
 ### 1. Reddit API (Free - 2 minutes)
 1. Go to https://www.reddit.com/prefs/apps
@@ -112,33 +112,33 @@ FETCH_INTERVAL=21600  # 6 hours
 POST_INTERVAL=14400   # 4 hours
 ```
 
-## 📊 Dashboard Usage
+## Dashboard Usage
 
 Once running, access your dashboard at **http://localhost:5173**
 
 ### Tabs Overview
-- **📈 Dashboard**: System status, API connections, quick actions, recent activity
-- **📱 Topics**: Browse fetched content, view quality scores, select for custom posts
-- **📝 Posts**: Manage generated posts, copy to clipboard, publish to LinkedIn
-- **⚙️ Settings**: Configure intervals, pause/resume scheduler, view API status
+- **Dashboard**: System status, API connections, quick actions, recent activity
+- **Topics**: Browse fetched content, view quality scores, select for custom posts
+- **Posts**: Manage generated posts, copy to clipboard, publish to LinkedIn
+- **Settings**: Configure intervals, pause/resume scheduler, view API status
 
 ### Quick Actions
-- **🔴 Test Reddit API**: Fetch a quality Android development post
-- **🤖 Test OpenAI**: Generate summary of fetched content  
-- **⚡ Test Both**: Run complete pipeline test
-- **🔄 Fetch Now**: Immediate content fetch
-- **✨ Generate Now**: Create new LinkedIn post
+- **Test Reddit API**: Fetch a quality Android development post
+- **Test OpenAI**: Generate summary of fetched content  
+- **Test Both**: Run complete pipeline test
+- **Fetch Now**: Immediate content fetch
+- **Generate Now**: Create new LinkedIn post
 
-## 🎯 Content Quality
+## Content Quality
 
-### What Gets Fetched ✅
+### What Gets Fetched
 - **Technical Discussions**: Jetpack Compose, Kotlin coroutines, architecture patterns
 - **Tool Updates**: Android Studio, Gradle, new library releases
 - **Best Practices**: Performance optimization, testing strategies, code quality
 - **Professional Insights**: Industry trends, development workflows
 - **Educational Content**: Tutorials, guides, deep dives
 
-### What Gets Filtered Out ❌
+### What Gets Filtered Out
 - Help requests ("How do I fix...")
 - Basic questions ("Beginner needs help")
 - Device-specific issues ("My phone won't...")
@@ -153,7 +153,7 @@ Once running, access your dashboard at **http://localhost:5173**
 | r/android | 100+ | 5+ | General Android (dev content only) |
 | X/Twitter | 10+ likes | 5+ retweets | Official announcements, trends |
 
-## 🛠️ CLI Commands
+## CLI Commands
 
 ```bash
 # Manual operations
@@ -167,31 +167,31 @@ python -m backend.cli logs --limit 50 # View recent logs
 python -m backend.cli start-scheduler
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 linkedin-android-poster/
-├── 📁 backend/                 # FastAPI application
-│   ├── 📁 fetchers/           # Reddit & X API clients
-│   ├── 📄 database.py         # SQLAlchemy models
-│   ├── 📄 clustering.py       # Topic analysis & ranking  
-│   ├── 📄 post_generator.py   # AI content generation
-│   ├── 📄 linkedin_poster.py  # LinkedIn API client
-│   ├── 📄 scheduler.py        # Background job system
-│   ├── 📄 sources_config.py   # Content source configuration
-│   └── 📄 main.py            # FastAPI app entry point
-├── 📁 frontend/               # React dashboard
-│   ├── 📁 src/               # React components & logic
-│   └── 📁 public/            # Static assets
-├── 📁 tests/                  # Comprehensive test suite
-├── 📄 .env.example           # Environment template
-├── 📄 setup.sh              # One-command setup script
-├── 📄 start.sh              # Application launcher
-├── 📄 SOURCES.md            # Content source documentation
-└── 📄 PROJECT.md            # Detailed technical docs
+├── backend/                 # FastAPI application
+│   ├── fetchers/           # Reddit & X API clients
+│   ├── database.py         # SQLAlchemy models
+│   ├── clustering.py       # Topic analysis & ranking  
+│   ├── post_generator.py   # AI content generation
+│   ├── linkedin_poster.py  # LinkedIn API client
+│   ├── scheduler.py        # Background job system
+│   ├── sources_config.py   # Content source configuration
+│   └── main.py            # FastAPI app entry point
+├── frontend/               # React dashboard
+│   ├── src/               # React components & logic
+│   └── public/            # Static assets
+├── tests/                  # Comprehensive test suite
+├── .env.example           # Environment template
+├── setup.sh              # One-command setup script
+├── start.sh              # Application launcher
+├── SOURCES.md            # Content source documentation
+└── PROJECT.md            # Detailed technical docs
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Interactive Testing
 Visit http://localhost:5173 for the test dashboard with:
@@ -211,7 +211,7 @@ python -m pytest --cov=backend --cov-report=html
 python -m pytest test_fetchers.py test_clustering.py
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Local Production
 ```bash
@@ -229,7 +229,7 @@ gunicorn main:app --workers 2 --bind 127.0.0.1:8000
 - **Docker**: `Dockerfile` included for containerization
 - **VPS**: Use provided systemd service files
 
-## 🔧 Customization
+## Customization
 
 ### Adding Content Sources
 Edit `backend/sources_config.py`:
@@ -257,7 +257,7 @@ Configure in `sources_config.py`:
 - Hashtag strategies
 - Professional themes
 
-## 📈 Cost Estimates
+## Cost Estimates
 
 | Service | Cost | Usage |
 |---------|------|-------|
@@ -267,7 +267,7 @@ Configure in `sources_config.py`:
 | LinkedIn API | **Free** | Rate limited |
 | **Total Monthly** | **~$2-5** | For automated operation |
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -295,7 +295,7 @@ Configure in `sources_config.py`:
 3. Review logs: `python -m backend.cli logs`
 4. Check [detailed documentation](PROJECT.md)
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -303,18 +303,18 @@ Configure in `sources_config.py`:
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Reddit API** for providing access to community discussions
 - **OpenAI** for powerful AI content generation
 - **Android Developer Community** for creating amazing content to curate
 - **FastAPI & React** for excellent development frameworks
 
-## 📞 Support
+## Support
 
 - **Documentation**: [PROJECT.md](PROJECT.md) | [SOURCES.md](SOURCES.md)
 - **Issues**: GitHub Issues tab
@@ -322,6 +322,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ for the Android developer community**
+**Built for the Android developer community**
 
 *Transform trending Android discussions into professional LinkedIn content automatically.*
